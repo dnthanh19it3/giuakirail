@@ -1,0 +1,18 @@
+<%= @books.inspect%>
+<h1>Danh sach sach</h1>
+
+<% @books.each do |book| %>
+  Name: <%= book.BookName %><br>
+  Publish Year: <%= book.BookName %><br>
+  <%
+=begin%>
+ Author: <% @Authors.each do |author| %>
+
+  <%end%> 
+<%
+=end%>
+  Pubisher: <%= book.publisher_id%><br>
+  Author: <%= book.author_id%><br>
+  Category: <%= book.category_id%><br>
+  <hr>
+<% end %>
